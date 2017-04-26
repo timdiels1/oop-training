@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.define :vagrant do |vagrant|
+    vagrant.vm.box = "debian8-php56-solr46"
+    vagrant.vm.box_url = "http://boxes.wunderkraut.be:8080/debian8-php56-solr46.box"
+  end
+end
